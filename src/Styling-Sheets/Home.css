@@ -1,0 +1,20 @@
+.homeContent {
+  text-align: center;
+}
+
+.mainHeader {
+  margin-top: 50%;
+  color: #f6640e;
+  font-size: 3rem;
+}
+
+.playButton {
+  width: 130px;
+  height: 60px;
+  border: 2px solid #00b44b;
+  border-radius: 50px;
+  margin-top: 50%;
+  font-size: 2rem;
+  color: #046cbe;
+  background-color: #9be0ba;
+}
