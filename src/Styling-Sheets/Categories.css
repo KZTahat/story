@@ -1,4 +1,9 @@
 
+
+.categoriesContainer{
+    margin-top: 70px;
+}
+
 .categoryBox{
     border: 1px solid #623b92;
     width: 40%;

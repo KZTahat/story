@@ -32,7 +32,9 @@ function Players(props) {
   function handleNextClick() {
     let randomNumber = getRandomNumber(namesArray.length);
     console.log(randomNumber);
+    console.log(namesArray[randomNumber]);
     props.handleStateFunction(namesArray, namesArray[randomNumber]);
+    history.push("display");
   }
 
   function deletePlayer(playerIndex) {

@@ -14,14 +14,12 @@ function Categories(props) {
     let randomNumber = getRandomNumber(
       categories[categoryId].NamesArray.length
     );
-    props.handleStateFunction(
-      categories[categoryId].categoryName,
-      categories[categoryId].NamesArray[randomNumber]
-    );
+    let outsider = categories[categoryId].NamesArray[randomNumber];
+    props.handleStateFunction(categories[categoryId].categoryName, outsider);
 
     history.push("players");
   }
-  
+
   return (
     <>
       <section className="categoriesContainer">

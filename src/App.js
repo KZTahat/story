@@ -4,6 +4,7 @@ import { useState } from "react";
 import Home from "./Components/Home.jsx";
 import Categories from "./Components/Categories";
 import Players from "./Components/Players";
+import Display from "./Components/Display";
 
 function App() {
   let [categoryName, setCategoryName] = useState();
@@ -21,7 +22,6 @@ function App() {
   function handlePlayersUpdate(playersArray, outsiderPlayer) {
     setPlayerNames([...playersArray]);
     setOutsider(outsiderPlayer);
-    console.log(outsider);
   }
 
   return (
@@ -36,6 +36,14 @@ function App() {
           </Route>
           <Route exact path="/players">
             <Players handleStateFunction={handlePlayersUpdate} />
+          </Route>
+          <Route exact path="/display">
+            <Display
+              categoryName={categoryName}
+              selectedName={selectedName}
+              playerNames={playerNames}
+              outsider={outsider}
+            />
           </Route>
         </Switch>
       </main>
