@@ -5,6 +5,7 @@ import Home from "./Components/Home.jsx";
 import Categories from "./Components/Categories";
 import Players from "./Components/Players";
 import Display from "./Components/Display";
+import Questions from "./Components/Questions";
 
 function App() {
   let [categoryName, setCategoryName] = useState();
@@ -44,6 +45,9 @@ function App() {
               playerNames={playerNames}
               outsider={outsider}
             />
+          </Route>
+          <Route exact path="/questions">
+            <Questions />
           </Route>
         </Switch>
       </main>

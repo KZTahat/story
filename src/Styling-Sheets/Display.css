@@ -1,0 +1,19 @@
+
+.displayContainer{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.playerName{
+    color: #F56815;
+    font-size: 2rem;
+}
+
+.paragraph{
+    color: #C20856;
+    font-size: 1.6rem;
+}
+
+.nextButton{
+    margin-top: 400px;
+}

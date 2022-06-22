@@ -1,11 +1,12 @@
 import "../Styling-Sheets/Display.css";
 import { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 function Display(props) {
+  const history = useHistory();
   let [playerIndex, setPlayerIndex] = useState(0);
   let [displayFirstP, setDisplayFirstP] = useState(true);
   let [data, setData] = useState();
-
   useEffect(() => {
     setData(props);
   }, []);
@@ -19,6 +20,9 @@ function Display(props) {
         setDisplayFirstP(false);
       }
     }
+    if (playerIndex == props.playerNames.length - 1 && displayFirstP == false) {
+      history.push("/questions");
+    }
   }
 
   return (
@@ -27,19 +31,24 @@ function Display(props) {
         <h2 className="playerName">{props.playerNames[playerIndex]}</h2>
         <div className="sentanceDisplay">
           {displayFirstP ? (
-            <p className="paragraph">
-              Give the phone to {props.playerNames[playerIndex]}
-              <br />
-              <br />
-              Press next to know wether you're
-              <br /> in or out the story, <br /> don't let anyone see the phone
-            </p>
+            playerIndex < props.playerNames.length ? (
+              <p className="paragraph">
+                Give the phone to {props.playerNames[playerIndex]}
+                <br />
+                <br />
+                Press next to know wether you're
+                <br /> in or out the story, <br /> don't let anyone see the
+                phone
+              </p>
+            ) : (
+              true
+            )
           ) : props.playerNames[playerIndex] == data.outsider ? (
             <p className="paragraph">
               You're outside the story! try to <br />
-              try to know is it based on other <br />
-              player questions, make them <br />
-              vote on the wrong person <br />
+              know it based on other players <br />
+              questions, make them vote <br />
+              on the wrong person <br />
               <br />
               Hint: the story is about {props.categoryName}
             </p>
