@@ -6,13 +6,9 @@ function Display(props) {
   const history = useHistory();
   let [playerIndex, setPlayerIndex] = useState(0);
   let [displayFirstP, setDisplayFirstP] = useState(true);
-  let [data, setData] = useState();
-  useEffect(() => {
-    setData(props);
-  }, []);
 
   function handleNext() {
-    if (playerIndex < data.playerNames.length) {
+    if (playerIndex < props.playerNames.length) {
       if (!displayFirstP) {
         setPlayerIndex(playerIndex + 1);
         setDisplayFirstP(true);
@@ -28,39 +24,40 @@ function Display(props) {
   return (
     <>
       <section className="displayContainer">
-        <h2 className="playerName">{props.playerNames[playerIndex]}</h2>
+        <h2 className="headTitle">{props.playerNames[playerIndex][0]}</h2>
         <div className="sentanceDisplay">
           {displayFirstP ? (
             playerIndex < props.playerNames.length ? (
               <p className="paragraph">
-                Give the phone to {props.playerNames[playerIndex]}
+                اعطي التلفون ل{props.playerNames[playerIndex][0]}
                 <br />
                 <br />
-                Press next to know wether you're
-                <br /> in or out the story, <br /> don't let anyone see the
-                phone
+                اكبس اللي بعدو عشان تعرف انت <br />
+                جوا ولا برا السولافة
               </p>
             ) : (
               true
             )
-          ) : props.playerNames[playerIndex] == data.outsider ? (
+          ) : props.playerNames[playerIndex] == props.outsider ? (
             <p className="paragraph">
-              You're outside the story! try to <br />
-              know it based on other players <br />
-              questions, make them vote <br />
-              on the wrong person <br />
+              انت اللي برا السولافة! حاول <br />
+              حاول تعرف ايش هي من <br />
+              الأسئلة, خليهم يصوتو <br />
+              على الشخص الخطأ<br />
               <br />
-              Hint: the story is about {props.categoryName}
+               ملاحظة: السولافة عن ال{props.categoryName}
             </p>
           ) : (
             <p className="paragraph">
-              You're inside the story it's <br /> {props.selectedName} <br />{" "}
-              try to know the outsider
+              أنت جوا السولافة واللي هي <br /> {props.selectedName} <br />{" "}
+              حاول تعرف مين برا السولافة
+              <br />
+              يلا اللي بعدو
             </p>
           )}
         </div>
         <button className="nextButton" onClick={handleNext}>
-          Next
+          اللي بعدو
         </button>
       </section>
     </>

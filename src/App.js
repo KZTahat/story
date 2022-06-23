@@ -6,6 +6,7 @@ import Categories from "./Components/Categories";
 import Players from "./Components/Players";
 import Display from "./Components/Display";
 import Questions from "./Components/Questions";
+import Vote from "./Components/Vote";
 
 function App() {
   let [categoryName, setCategoryName] = useState();
@@ -47,7 +48,10 @@ function App() {
             />
           </Route>
           <Route exact path="/questions">
-            <Questions />
+            <Questions playerNames={playerNames} />
+          </Route>
+          <Route exact path="/vote">
+            <Vote playerNames={playerNames} outsider={outsider} />
           </Route>
         </Switch>
       </main>

@@ -1,6 +1,6 @@
 [
   {
-    "categoryName": "Cars",
+    "categoryName": "سيارات",
     "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2oVkxs_N9Ut9yVir2h17KvPwjSIJfAGxDw&usqp=CAU",
     "NamesArray": [
       "Toyota Camry",
@@ -45,112 +45,143 @@
     ]
   },
   {
-    "categoryName": "Food",
+    "categoryName": "أكل",
     "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ-YIjFYQWnt_0r4GNT2d5-4ra4eO5oW3yhQ&usqp=CAU",
     "NamesArray": [
-      "Fattoush",
-      "Mansaf",
-      "Maglobeh",
-      "Mulukhiyah",
-      "Kabseh",
-      "Senet Batata",
-      "Kosa",
-      "Mjadara",
-      "Fasolea",
-      "Shorabet Adas",
-      "Makmora",
-      "Mtabag",
-      "Shawerma",
-      "Falafel",
-      "Homes",
-      "Keshek",
-      "Qalaet Bandora",
-      "Kofta",
-      "Steak",
-      "Zenger"
+      "فتوش",
+      "منسف",
+      "مقولبة",
+      "ملوخية",
+      "كبسة",
+      "صينية بطاطا",
+      "كوسا",
+      "مجدرة",
+      "فاصوليا",
+      "شوربة عدس",
+      "مكمورة",
+      "مطابق",
+      "شورما",
+      "فلافل",
+      "حمص",
+      "كيشك",
+      "قلاية بندورة",
+      "كفته",
+      "ستيك",
+      "زنجر"
     ]
   },
   {
-    "categoryName": "Animals",
+    "categoryName": "حيوانات",
     "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfjVLQLFP3uXKiiu1Wq77Nnx5qdDRaWkLRA&usqp=CAU",
     "NamesArray": [
-      "Dog",
-      "Cat",
-      "Lion",
-      "Zebra",
-      "Donkey",
-      "Snake",
-      "Kobra",
-      "Crocodile",
-      "Eagle",
-      "Love Bird",
-      "Spider",
-      "Fly",
-      "cow",
-      "Sheep",
-      "Camel",
-      "Monkey",
-      "Lizard",
-      "Chicken",
-      "Pigeon",
-      "Panda",
-      "Giraffe",
-      "Fox",
-      "Kangaroo",
-      "Elephant",
-      "Peacock",
-      "Wolf"
+      "كلب",
+      "بسة",
+      "أسد",
+      "حمار وحشي",
+      "حمار",
+      "حية",
+      "كوبرا",
+      "تمساح",
+      "صقر",
+      "نسر",
+      "طيور الحب",
+      "عنكبوت",
+      "ذبانة",
+      "ناموسة",
+      "بقرة",
+      "خروف",
+      "عنزة",
+      "جمل",
+      "قرد",
+      "سحلية",
+      "جاجة",
+      "حمامة",
+      "باندا",
+      "زرافة",
+      "ثعلب",
+      "كنغر",
+      "فيل",
+      "طاووس",
+      "ذيب",
+      "أبو علي",
+      "دبدوب",
+      "أرنب",
+      "نعامة",
+      "جرثومة😁"
     ]
   },
   {
-    "categoryName": "Clothes",
+    "categoryName": "ملابس",
     "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmpGUd5njfqd52SIwixgbCYXqJjKEvG5A-w&usqp=CAU",
     "NamesArray": [
-      "Skirt",
-      "Pants",
-      "Hoodie",
-      "Vest",
-      "HandBag",
-      "Shorts",
-      "Wedding Dress",
-      "Socks",
-      "Winter Coat",
-      "Swimsuit",
-      "Hat",
-      "Cap",
-      "Scarf"
+      "بلوزة",
+      "بنطلون",
+      "سنسال",
+      "خاتم",
+      "شنتة ايد",
+      "شنتة ظهر",
+      "شورت",
+      "فستان عرس",
+      "جرابات",
+      "جاكيت شتوي",
+      "بدلة سباحة",
+      "طاقية",
+      "قميص",
+      "شال",
+      "شبشب",
+      "صرماية",
+      "شووز",
+      "ربطة أيد",
+      ""
     ]
   },
   {
-    "categoryName": "Drinks",
+    "categoryName": "مشروبات",
     "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbPZfma3B3O43BZXKWpECagXMRWB7DpF5zvA&usqp=CAU",
     "NamesArray": [
-      "Water",
-      "Tea",
-      "Coffee",
-      "Milk",
-      "Tamor Hindi",
-      "Pepsi",
-      "Lemon with Mint",
-      "Beer",
-      "Orange Juice",
-      "Energy Drink",
-      "Cocktail"
+      "مي",
+      "شاي",
+      "قهوة",
+      "حليب",
+      "تمر هندي",
+      "ببس",
+      "ليمون ونعنع",
+      "حليب وفراولة",
+      "عصير برتقال",
+      "مشروب طاقة",
+      "كوكتيل",
+      "فيمتو",
+      "عصير فراولة",
+      "عصير بطيخ",
+      "عصير مانجا"
     ]
   },
   {
-    "categoryName": "Football",
+    "categoryName": "فطبول",
     "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEyjPfkFRewk99s4WaYCBsbmAOajFJ1EMCAw&usqp=CAU",
     "NamesArray": [
-      "Messi",
-      "Camp nuo",
-      "Barcalona",
-      "Cristiano Ronaldo",
-      "Real Madrid",
-      "Santiago Bernabeu",
-      "Liverpool",
-      "Chelsea",
-      ""
+      "ميسي",
+      "كامب نو",
+      "برشلونة",
+      "كرستيانو رونالدو",
+      "ريال مدريد",
+      "سنتياغو برنابيو",
+      "ليفربول",
+      "تشيلسي",
+      "بيب غوارديولا",
+      "رونالدو نازاريو",
+      "سيرجيو بوسكيتس",
+      "انييستا",
+      "تشافي هيرنانديز",
+      "ابطال اوروبا",
+      "الدوري الاسباني",
+      "الدوري الانجليزي",
+      "الدوري الالماني",
+      "الدوري الفرنسي",
+      "الدوري الايطالي",
+      "يورغن كلوب",
+      "نيمار",
+      "لويس سواريز"
     ]
   }
 ]

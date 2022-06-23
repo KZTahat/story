@@ -22,10 +22,10 @@ function Players(props) {
   }
 
   function handleAddtion(event) {
-    let playerName = event.target.playerName.value;
     event.preventDefault();
+    let playerName = event.target.playerName.value;
     if (playerName != "" && isNaN(playerName)) {
-      setNamesArray([...namesArray, playerName]);
+      setNamesArray([...namesArray, [playerName, 0]]);
     }
   }
 
@@ -56,17 +56,16 @@ function Players(props) {
         </button>
         {namesArray.length < 3 ? (
           <p>
-            Add at least three <br />
-            players then press <br />
-            Next
+            ضيف أقل اشي ثلث لعيبة <br />
+            بعدين اكبس اللي بعدو
           </p>
         ) : (
           <p>
-            You can add more
+            بدك تضيف كمان ضيف
             <br />
-            players if you wish
+            بدكيش لبلاش
             <br />
-            or just start
+            المهم بلش وانجز
           </p>
         )}
 
@@ -76,7 +75,7 @@ function Players(props) {
                 return (
                   <div key={index}>
                     <div key={index} className="playerBox">
-                      <span>{playername}</span>
+                      <span>{playername[0]}</span>
                     </div>
                     <Icon
                       className="deleteButton"
@@ -97,7 +96,7 @@ function Players(props) {
             disabled={namesArray.length < 3}
             onClick={handleNextClick}
           >
-            Next
+            بلش
           </button>
           <button
             className="outsideAddtionButton"
@@ -120,7 +119,7 @@ function Players(props) {
               className="insideBackButton"
               onClick={() => handleModel(false)}
             >
-              Back
+              ارجع
             </button>
           </div>
         ) : (
