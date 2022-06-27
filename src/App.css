@@ -5,3 +5,14 @@
   background-color: #ebebeb;
   text-align: center;
 }
+
+
+.optionButton{
+  border: 1px solid #60358D;
+  background-color: #F9C0A0;
+  color: #F7955D;
+  width: 120px;
+  height: 50px;
+  display: block;
+  margin-left: 30%;
+}

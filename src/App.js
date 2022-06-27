@@ -7,6 +7,7 @@ import Players from "./Components/Players";
 import Display from "./Components/Display";
 import Questions from "./Components/Questions";
 import Vote from "./Components/Vote";
+import Choose from "./Components/Choose";
 
 function App() {
   let [categoryName, setCategoryName] = useState();
@@ -52,6 +53,13 @@ function App() {
           </Route>
           <Route exact path="/vote">
             <Vote playerNames={playerNames} outsider={outsider} />
+          </Route>
+          <Route exact path="/choose">
+            <Choose
+              categoryName={categoryName}
+              outsider={outsider}
+              selectedName={selectedName}
+            />
           </Route>
         </Switch>
       </main>
